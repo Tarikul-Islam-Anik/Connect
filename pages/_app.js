@@ -19,7 +19,7 @@ export default function Connect({ Component, pageProps }) {
           name="description"
           content="Connect is a simple chat app that allows you to chat with your friends and family."
         />
-        <link rel="icon" type="image/svg" href="public/favicon.svg" />
+        <link rel="icon" type="image/svg" href="/favicon.svg" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta property="og:url" content="www.connect-me.vercel.app" />
@@ -29,7 +29,7 @@ export default function Connect({ Component, pageProps }) {
           property="og:description"
           content="Connect is a simple chat app that allows you to chat with your friends and family."
         />
-        <meta property="og:image" content="public/og-image.png" />
+        <meta property="og:image" content="/og-image.png" />
       </Head>
       <ToastContainer
         position="bottom-right"

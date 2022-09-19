@@ -22,7 +22,7 @@ export default function Connect({ Component, pageProps }) {
         <link rel="icon" type="image/svg" href="public/favicon.svg" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="www.connect-me.vercel.app" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Connect - a simple chat app" />
         <meta

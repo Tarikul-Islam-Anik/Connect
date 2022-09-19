@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { Navbar } from "./../Navbar/navbar";
+import { Navbar } from './../Navbar/navbar';
 import Search from "./../Search/search";
 import ChatList from "./../ChatList/chatList";
 import ChatBox from "./../Chatbox/chatbox";

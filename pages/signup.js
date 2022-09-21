@@ -70,97 +70,80 @@ export default function Signup() {
       <Head>
         <title>Sign up | Connect</title>
       </Head>
-      <div className="font-inter grid h-screen place-items-center bg-black/5">
-        <div className="form-card sm:h[80vh] h-[85vh] w-[50vh]">
-          <div className="w-[90%]">
-            <div className="mb-4 flex flex-col items-center justify-center">
-              <h1 className="mb-2 text-2xl font-bold">Sign up</h1>
-              <p className="w-[90%] text-center">
-                Welcome to Connect chat app. Please create a new account to
-                continue.
-              </p>
-            </div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 gap-2">
-                <label htmlFor="name" className="label">
-                  Full Name
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="name"
-                  autoComplete="off"
-                  required
-                  placeholder="Your Email"
-                  className="input focus"
-                />
-                <label htmlFor="email" className="label">
-                  Email address
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="off"
-                  required
-                  placeholder="Your Email"
-                  className="input focus"
-                />
-                <label htmlFor="password" className="label">
-                  Password
-                </label>
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="off"
-                  required
-                  placeholder="Your Password"
-                  className="input focus"
-                />
-                <label
-                  htmlFor="file"
-                  className="my-4 block text-sm font-medium text-gray-600"
-                >
-                  Profile Picture
-                </label>
-                <input
-                  type="file"
-                  id="file"
-                  required
-                  className="file-input focus:outline-none"
-                />
-              </div>
-              <div>
-                <button className="btn focus bg-black hover:opacity-75 focus:ring-black focus:ring-offset-white">
-                  Sign up
-                </button>
-              </div>
-            </form>
-            <div className="relative my-4">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300"></div>
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="bg-white px-2 text-neutral-600">
-                  {" "}
-                  Already have an account?{" "}
-                </span>
-              </div>
-            </div>
-            <div>
+      <form
+        onSubmit={handleSubmit}
+        className="flex min-h-screen items-center justify-center bg-black/5"
+      >
+        <div className="z-20 rounded-2xl bg-white p-8 shadow-xl">
+          <div className="mb-6 space-y-4">
+            <h1 className="cursor-pointer text-center text-3xl font-bold">
+              Sign up
+            </h1>
+            <p className="w-80 cursor-pointer text-center text-sm font-semibold tracking-wide">
+              Welcome to Connect chat app. Please create a new account to
+              continue.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <label htmlFor="name" className="label">
+              Full Name
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="name"
+              autoComplete="off"
+              required
+              placeholder="Name"
+              className="input focus"
+            />
+            <label htmlFor="email" className="label">
+              Email address
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="off"
+              required
+              placeholder="Email address"
+              className="input focus"
+            />
+            <label htmlFor="password" className="label">
+              Password
+            </label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autoComplete="off"
+              required
+              placeholder="Password"
+              className="input focus"
+            />
+            <label htmlFor="file" className="label">
+              Profile Picture
+            </label>
+            <input
+              type="file"
+              id="file"
+              required
+              className="file-input focus:outline-none"
+            />
+          </div>
+          <div className="mt-6 text-center">
+            <button className="btn pop_animation bg-black">
+              Create account
+            </button>
+            <p className="mt-4 text-sm">
+              Already have an account?{" "}
               <Link href="/signin">
-                <a
-                  className="btn focus bg-black/10 text-black hover:opacity-75
-                 focus:ring-black/10 focus:ring-offset-white"
-                >
-                  Sign in here
-                </a>
+                <a className="underline">Sign in</a>
               </Link>
-            </div>
+            </p>
           </div>
         </div>
-      </div>
+      </form>
     </>
   );
 }

@@ -25,7 +25,7 @@ export default function ChatBox() {
           <Input />
         </>
       ) : (
-        <div className="grid h-full place-items-center">
+        <div className="grid h-full place-items-center text-center">
           <h3 className="text-2xl font-semibold text-gray-400">
             Select a chat or start a new conversation
           </h3>

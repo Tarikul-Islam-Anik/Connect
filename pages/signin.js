@@ -78,7 +78,9 @@ export default function Signin() {
             />
           </div>
           <div className="mt-6 text-center">
-            <button className="btn pop_animation bg-black">Let's Go!</button>
+            <button className="btn pop_animation bg-black">
+              Let&apos;s Go!
+            </button>
             <p className="mt-4 text-sm">
               Don&apos;t have an account?{" "}
               <Link href="/signin">

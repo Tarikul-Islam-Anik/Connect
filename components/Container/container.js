@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { Navbar } from './../Navbar/navbar';
+import { Navbar } from "./../Navbar/navbar";
 import Search from "./../Search/search";
 import ChatList from "./../ChatList/chatList";
 import ChatBox from "./../Chatbox/chatbox";
@@ -9,9 +9,9 @@ export default function Container() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex">
+    <div className="relative sm:flex">
       <button
-        className="fixed top-7 right-4 z-10 sm:hidden"
+        className="absolute top-7 right-4 z-10 sm:hidden"
         onClick={() => setOpen(true)}
       >
         <svg
@@ -78,7 +78,7 @@ export default function Container() {
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <div className="absolute top-0 right-0 -mr-8 flex pt-4 pl-2">
+                      <div className="absolute top-3 right-0 -mr-10 flex pt-4 pl-2">
                         <button
                           type="button"
                           className="focus z-10 rounded-md text-gray-300 hover:text-white"

@@ -4,6 +4,8 @@ import { ChatContextProvider } from "../context/ChatContext";
 import { AuthContextProvider } from "./../context/AuthContext";
 import { ChatSelectedContextProvider } from "../context/ChatSelected";
 import "../styles/globals.css";
+import "react-toastify/dist/ReactToastify.css";
+
 
 export default function Connect({ Component, pageProps }) {
   return (

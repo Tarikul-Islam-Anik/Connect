@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, storage, db } from "../firebase/firebase";

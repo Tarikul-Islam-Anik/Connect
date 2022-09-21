@@ -83,7 +83,7 @@ export default function Signin() {
             </button>
             <p className="mt-4 text-sm">
               Don&apos;t have an account?{" "}
-              <Link href="/signin">
+              <Link href="/signup">
                 <a className="underline">Sign up</a>
               </Link>
             </p>
